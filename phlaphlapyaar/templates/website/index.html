@@ -1,15 +1,6 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>YASH aur Django</title>
+{% extends "layout.html" %}
 
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-</head>
-<body>
+{% block title %}Home Page{% endblock %}
 
-    <h1>YASH aur Django</h1>
 
-</body>
-</html>
+{% block content %}This is my content.{% endblock %}
