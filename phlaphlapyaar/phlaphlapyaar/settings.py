@@ -81,11 +81,12 @@ TIME_ZONE = "UTC"
 USE_I18N = True
 USE_TZ = True
 
-# ✅ STATIC FILES (FINAL CORRECT)
+#  STATIC FILES (FINAL CORRECT)
 STATIC_URL = "static/"
-
 STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
 
+MEDIA_URL='/media/'
+MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 # (Optional but recommended for production later)
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
